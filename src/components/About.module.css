@@ -1,0 +1,176 @@
+.about {
+  padding: 20px 24px 60px;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left Content */
+.content {
+  flex: 1;
+  max-width: 440px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #e91e8c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.pink {
+  color: #e91e8c;
+}
+
+.divider {
+  width: 40px;
+  height: 3px;
+  background: #e91e8c;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.readBtn {
+  background: transparent;
+  color: #e91e8c;
+  border: 2px solid #e91e8c;
+  border-radius: 25px;
+  padding: 11px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.readBtn:hover {
+  background: #e91e8c;
+  color: #fff;
+}
+
+/* Right Image Grid */
+.imageGrid {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  max-width: 560px;
+  height: 340px;
+}
+
+.mainImageWrap {
+  flex: 1.4;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sideImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.sideImageWrap,
+.sideImageWrap2 {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.playOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.playBtn {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: drop-shadow(0 4px 12px rgba(233, 30, 140, 0.4));
+}
+
+.playBtn:hover {
+  transform: scale(1.1);
+}
+
+.playBtn svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .divider {
+    margin: 0 auto 20px;
+  }
+
+  .imageGrid {
+    max-width: 100%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageGrid {
+    height: 220px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+}
