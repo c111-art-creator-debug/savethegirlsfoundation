@@ -9,21 +9,11 @@ const Footer = () => {
           {/* Logo Column */}
           <div className={styles.logoCol}>
             <div className={styles.logo}>
-              <div className={styles.logoIcon}>
-                <svg viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="19" stroke="white" strokeWidth="1.5" fill="rgba(255,255,255,0.1)" />
-                  <path d="M20 8 C14 8 10 13 10 18 C10 24 16 28 20 32 C24 28 30 24 30 18 C30 13 26 8 20 8Z" fill="white" opacity="0.3" />
-                  <circle cx="20" cy="16" r="4" fill="white" />
-                  <path d="M14 26 Q20 22 26 26" stroke="white" strokeWidth="1.5" fill="none" />
-                </svg>
-              </div>
-              <div>
-                <div className={styles.logoText}>
-                  <span className={styles.logoWhite}>Save </span>
-                  <span className={styles.logoPink}>the girls</span>
-                </div>
-                <div className={styles.logoFoundation}>FOUNDATION</div>
-              </div>
+              <img
+                src="/logo (2).png"
+                alt="Save The Girls Foundation"
+                className={styles.logoImg}
+              />
             </div>
             <p className={styles.logoTagline}>Educate. Empower. Protect.</p>
             <p className={styles.logoDesc}>
