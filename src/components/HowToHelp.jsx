@@ -4,50 +4,40 @@ const ways = [
   {
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)"/>
-        <path d="M24 12 C18 12 14 16 14 20 C14 26 20 30 24 34 C28 30 34 26 34 20 C34 16 30 12 24 12Z" fill="white" opacity="0.9"/>
-        <path d="M24 16 C20 16 18 18.5 18 20 C18 24 22 27 24 29 C26 27 30 24 30 20 C30 18.5 28 16 24 16Z" fill="white"/>
+        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)" />
+        {/* Heart */}
+        <path
+          d="M24 34 C24 34 12 26 12 18 C12 14 15 11 19 11 C21.5 11 23.5 12.5 24 14 C24.5 12.5 26.5 11 29 11 C33 11 36 14 36 18 C36 26 24 34 24 34Z"
+          fill="white"
+          opacity="0.9"
+        />
       </svg>
     ),
     label: 'Donate',
+    desc: 'Your financial gift funds rescue operations, shelter, education, and care for girls in need.',
   },
   {
     icon: (
       <svg viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)"/>
-        <circle cx="18" cy="18" r="4" fill="white" opacity="0.8"/>
-        <circle cx="30" cy="18" r="4" fill="white" opacity="0.8"/>
-        <circle cx="24" cy="16" r="4" fill="white"/>
-        <path d="M10 34 C10 27 14 23 18 23" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round"/>
-        <path d="M38 34 C38 27 34 23 30 23" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round"/>
-        <path d="M14 36 C14 29 18 25 24 25 C30 25 34 29 34 36" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)" />
+        {/* Girl silhouette with star */}
+        <circle cx="24" cy="16" r="5" fill="white" opacity="0.9" />
+        <path
+          d="M14 36 C14 28 18 24 24 24 C30 24 34 28 34 36"
+          stroke="white"
+          strokeWidth="2.5"
+          fill="none"
+          strokeLinecap="round"
+        />
+        <path
+          d="M33 12 L34.2 15.5 L38 15.5 L35 17.8 L36.2 21.5 L33 19.2 L29.8 21.5 L31 17.8 L28 15.5 L31.8 15.5 Z"
+          fill="white"
+          opacity="0.85"
+        />
       </svg>
     ),
-    label: 'Volunteer',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)"/>
-        <rect x="14" y="18" width="20" height="14" rx="3" fill="white" opacity="0.3"/>
-        <rect x="16" y="20" width="16" height="10" rx="2" fill="white" opacity="0.5"/>
-        <path d="M18 16 L18 20" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M30 16 L30 20" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="24" cy="25" r="2" fill="white"/>
-      </svg>
-    ),
-    label: 'Sponsor a Girl',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="22" fill="rgba(255,255,255,0.2)"/>
-        <path d="M12 24 L20 24 L22 18 L26 30 L28 24 L36 24" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        <circle cx="36" cy="16" r="4" fill="white" opacity="0.6"/>
-        <path d="M34 16 L36 18 L39 14" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-    label: 'Spread Awareness',
+    label: 'Help a Girl',
+    desc: "Sponsor a girl's education, mentorship, and rehabilitation journey — change one life at a time.",
   },
 ];
 
@@ -64,6 +54,7 @@ const HowToHelp = () => {
             <div className={styles.wayItem} key={i}>
               <div className={styles.iconCircle}>{way.icon}</div>
               <span className={styles.wayLabel}>{way.label}</span>
+              <p className={styles.wayDesc}>{way.desc}</p>
             </div>
           ))}
         </div>

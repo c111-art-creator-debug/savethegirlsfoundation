@@ -3,7 +3,10 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import About from './components/About';
 import WhatWeDo from './components/WhatWeDo';
+import Benefits from './components/Benefits';
 import HowToHelp from './components/HowToHelp';
+import Leadership from './components/Leadership';
+import Testimonials from './components/Testimonials';
 import Quote from './components/Quote';
 import Footer from './components/Footer';
 import './App.css';
@@ -17,7 +20,10 @@ function App() {
         <Stats />
         <About />
         <WhatWeDo />
+        <Benefits />
         <HowToHelp />
+        <Leadership />
+        <Testimonials />
         <Quote />
       </main>
       <Footer />

@@ -11,8 +11,8 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
-  gap: 40px;
+  grid-template-columns: 1.8fr 1fr 1fr 1.6fr;
+  gap: 48px;
 }
 
 /* Logo Column */
@@ -104,35 +104,6 @@
   color: #e91e8c;
 }
 
-/* Social Icons */
-.socialIcons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.socialIcon {
-  width: 34px;
-  height: 34px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #aaa;
-  transition: background 0.2s, color 0.2s;
-}
-
-.socialIcon:hover {
-  background: #e91e8c;
-  color: #fff;
-}
-
-.socialIcon svg {
-  width: 16px;
-  height: 16px;
-}
-
 /* Newsletter */
 .newsletterText {
   font-size: 12px;
@@ -142,11 +113,10 @@
 
 .newsletterForm {
   display: flex;
-  gap: 0;
   border-radius: 25px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .emailInput {
@@ -158,6 +128,7 @@
   font-size: 12px;
   color: #ccc;
   font-family: 'Poppins', sans-serif;
+  min-width: 0;
 }
 
 .emailInput::placeholder {
@@ -173,6 +144,7 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
+  flex-shrink: 0;
 }
 
 .sendBtn:hover {
@@ -188,7 +160,7 @@
 
 /* Bottom Bar */
 .bottomBar {
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
   padding: 18px 24px;
 }
 
@@ -215,20 +187,10 @@
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
-  }
-
-  .logoCol {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 
   .logoCol {

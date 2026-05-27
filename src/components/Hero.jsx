@@ -1,4 +1,3 @@
-import heroImg from '../assets/hero.png';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -36,10 +35,14 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image */}
+        {/* Right Image — ladies.jpeg as hero */}
         <div className={styles.imageWrapper}>
           <div className={styles.pinkBlob}></div>
-          <img src={heroImg} alt="Girls supported by the foundation" className={styles.heroImg} />
+          <img
+            src="/ladies.jpeg"
+            alt="Girls supported by the foundation"
+            className={styles.heroImg}
+          />
         </div>
       </div>
     </section>
