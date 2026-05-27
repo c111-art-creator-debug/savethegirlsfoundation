@@ -17,7 +17,10 @@ const About = () => {
             providing them with safety, education, counseling, and skills training to build
             independent futures.
           </p>
-          <button className={styles.readBtn}>
+          <button
+            className={styles.readBtn}
+            onClick={() => document.getElementById('stories')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Read Our Story <span>→</span>
           </button>
         </div>

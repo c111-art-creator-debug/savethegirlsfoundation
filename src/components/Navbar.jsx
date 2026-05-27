@@ -27,7 +27,10 @@ const Navbar = () => {
         </ul>
 
         {/* Donate Button */}
-        <button className={styles.donateBtn}>
+        <button
+          className={styles.donateBtn}
+          onClick={() => document.getElementById('donate')?.scrollIntoView({ behavior: 'smooth' })}
+        >
           <span className={styles.heartIcon}>♥</span> Donate Now
         </button>
 

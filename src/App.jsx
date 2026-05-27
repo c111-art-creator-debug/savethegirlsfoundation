@@ -8,6 +8,7 @@ import HowToHelp from './components/HowToHelp';
 import Leadership from './components/Leadership';
 import Testimonials from './components/Testimonials';
 import Quote from './components/Quote';
+import DonatePage from './components/DonatePage';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -25,6 +26,7 @@ function App() {
         <Leadership />
         <Testimonials />
         <Quote />
+        <DonatePage />
       </main>
       <Footer />
     </>

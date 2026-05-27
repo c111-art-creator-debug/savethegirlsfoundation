@@ -53,6 +53,11 @@
   transform: translateY(-6px);
 }
 
+.wayItem:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.7);
+  border-radius: 12px;
+}
+
 .iconCircle {
   width: 90px;
   height: 90px;
@@ -88,6 +93,18 @@
   color: rgba(255, 255, 255, 0.78);
   line-height: 1.65;
   margin: 0;
+}
+
+.wayArrow {
+  font-size: 18px;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.wayItem:hover .wayArrow {
+  color: #fff;
+  transform: translateX(4px);
 }
 
 @media (max-width: 768px) {

@@ -26,10 +26,16 @@ const Hero = () => {
             <span className={styles.pink}>confidence</span>.
           </p>
           <div className={styles.buttons}>
-            <button className={styles.donateBtn}>
+            <button
+              className={styles.donateBtn}
+              onClick={() => document.getElementById('donate')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <span>♥</span> Donate Now
             </button>
-            <button className={styles.learnBtn}>
+            <button
+              className={styles.learnBtn}
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Learn More <span className={styles.arrow}>→</span>
             </button>
           </div>
