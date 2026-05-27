@@ -10,7 +10,7 @@ const stats = [
         <path d="M20 8 L22 6 L20 4 L18 6 Z" fill="#e91e8c"/>
       </svg>
     ),
-    number: '1,250+',
+    number: '100+',
     label: 'Girls Rescued',
   },
   {
@@ -24,7 +24,7 @@ const stats = [
         <path d="M28 12 L30 14 L33 10" stroke="#e91e8c" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    number: '850+',
+    number: '75+',
     label: 'Educated & Trained',
   },
   {
@@ -38,7 +38,7 @@ const stats = [
         <path d="M10 32 C10 26 14 22 20 22 C26 22 30 26 30 32" stroke="#e91e8c" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
       </svg>
     ),
-    number: '60+',
+    number: '12+',
     label: 'Communities Reached',
   },
   {
