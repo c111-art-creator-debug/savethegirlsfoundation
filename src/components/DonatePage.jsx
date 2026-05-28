@@ -148,11 +148,11 @@ const DonatePage = () => {
               <h3 className={styles.impactTitle}>What Your Donation Does</h3>
               <div className={styles.impactList}>
                 {[
-                  { amount: '$10', desc: 'Provides a week of meals for one girl' },
-                  { amount: '$25', desc: 'Covers school supplies for a full term' },
-                  { amount: '$50', desc: 'Funds one month of counseling sessions' },
-                  { amount: '$100', desc: 'Sponsors a girl\'s education for a semester' },
-                  { amount: '$250+', desc: 'Supports full rehabilitation & reintegration' },
+                  { amount: '$50',   desc: 'Provides two weeks of meals and basic care for one girl' },
+                  { amount: '$100',  desc: 'Covers school supplies and uniforms for a full term' },
+                  { amount: '$200',  desc: 'Funds a month of counseling and mental health support' },
+                  { amount: '$500',  desc: 'Sponsors a girl\'s full semester of education' },
+                  { amount: '$1,000', desc: 'Supports complete rehabilitation and reintegration' },
                 ].map((item, i) => (
                   <div className={styles.impactRow} key={i}>
                     <span className={styles.impactAmount}>{item.amount}</span>
