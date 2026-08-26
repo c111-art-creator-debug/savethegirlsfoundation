@@ -142,6 +142,11 @@ const DonatePage = () => {
               💳 Donations are processed securely through PayPal. Please verify the email 
               address before sending. All donations are non-refundable.
             </p>
+
+            {/* Important instruction */}
+            <p className={styles.notice} style={{ marginTop: '1rem', fontWeight: '600' }}>
+              ⚠️ Set payment description/narration as <strong>Family & friends</strong> when donating.
+            </p>
           </div>
 
           {/* Right side — impact + email */}
