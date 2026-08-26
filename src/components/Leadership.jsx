@@ -9,11 +9,11 @@ const leaders = [
     bio: `This is the Chairman of the Foundation — Chairman Ray Barber Jr. A passionate advocate for human rights and child welfare, Chairman Barber has dedicated over two decades of his life to fighting exploitation and building systems that protect vulnerable girls across communities. Under his visionary leadership, Save The Girls Foundation has grown from a grassroots initiative into a nationally recognized organization that has rescued and rehabilitated over 1,250 girls. He believes that when you invest in a girl, you invest in an entire generation.`,
   },
   {
-    image: '/woman.jpg',
-    name: 'Cherry Lovenny',
+    image: '/newWoman.jpg',
+    name: 'Melanie Perkins',
     title: 'Convener & Chief Executive Officer',
     quote: '"Healing begins the moment a girl knows she is not alone."',
-    bio: `This is the Convener of the Foundation and Chief Executive Officer — Cherry Lovenny. A trailblazing leader in social welfare and community development, Cherry brings warmth, strategy, and relentless determination to every initiative she leads. With a background in psychology and nonprofit management, she has built the foundation's counseling, education, and empowerment programs from the ground up. Cherry's hands-on approach and deep empathy for survivors have made her a trusted voice in the fight against gender-based exploitation. She is the heart and operational backbone of Save The Girls Foundation.`,
+    bio: `This is the Convener of the Foundation and Chief Executive Officer — Melanie Perkins. A trailblazing leader in social welfare and community development, Melanie brings warmth, strategy, and relentless determination to every initiative she leads. With a background in psychology and nonprofit management, she has built the foundation's counseling, education, and empowerment programs from the ground up. Melanie's hands-on approach and deep empathy for survivors have made her a trusted voice in the fight against gender-based exploitation. She is the heart and operational backbone of Save The Girls Foundation.`,
   },
 ];
 

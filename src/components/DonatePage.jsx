@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import styles from './DonatePage.module.css';
 
-const BTC_ADDRESS = '1DyfkGSKG7ngH4Vcei3Y3BohiMmNdEgk8d';
+const PAYPAL_EMAIL = 'julieannganley@gmail.com';
 
 const DonatePage = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(BTC_ADDRESS).then(() => {
+    navigator.clipboard.writeText(PAYPAL_EMAIL).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 3000);
     });
@@ -31,88 +31,92 @@ const DonatePage = () => {
 
         <div className={styles.grid}>
 
-          {/* Bitcoin Card */}
+          {/* PayPal Card */}
           <div className={styles.btcCard}>
             {/* Glow blob */}
             <div className={styles.glowBlob}></div>
 
-            {/* Bitcoin Logo */}
+            {/* PayPal Logo */}
             <div className={styles.btcLogoWrap}>
               <svg className={styles.btcLogo} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="32" fill="#F7931A"/>
+                <circle cx="32" cy="32" r="32" fill="#003087"/>
                 <path
-                  d="M46.1 27.4c.6-4.2-2.6-6.5-7-8l1.4-5.7-3.5-.9-1.4 5.5c-.9-.2-1.9-.5-2.8-.7l1.4-5.6-3.5-.9-1.4 5.7c-.8-.2-1.5-.4-2.2-.5l-4.8-1.2-.9 3.7s2.6.6 2.5.6c1.4.4 1.7 1.3 1.6 2l-1.6 6.4c.1 0 .2.1.4.1l-.4-.1-2.2 8.9c-.2.4-.6 1-1.5.8.0.1-2.5-.6-2.5-.6l-1.7 4 4.6 1.1c.8.2 1.7.4 2.5.7l-1.4 5.8 3.5.9 1.4-5.7c1 .3 1.9.5 2.8.7l-1.4 5.6 3.5.9 1.4-5.8c5.9 1.1 10.3.7 12.2-4.7 1.5-4.3-.1-6.8-3.2-8.4 2.3-.5 4-2 4.4-5zm-7.9 11.1c-1.1 4.3-8.4 2-10.8 1.4l1.9-7.7c2.4.6 10.1 1.8 8.9 6.3zm1.1-11.2c-1 3.9-7.1 1.9-9.1 1.4l1.7-7c2 .5 8.5 1.4 7.4 5.6z"
-                  fill="white"
+                  d="M28 18h9.5c3.3 0 6 2.2 6.8 5.3.2.7.2 1.5.2 2.2 0 4.4-3.6 8-8 8h-3.2l-1.1 6.5c-.1.6-.6 1-1.2 1h-4c-.4 0-.7-.4-.6-.8l3.6-21.2c.1-.6.6-1 1.2-1zm-7.5 8h9.5c.6 0 1 .4 1 1 0 .1 0 .2-.1.3l-1.5 9c-.1.6-.6 1-1.2 1h-4c-.4 0-.7-.4-.6-.8l2-11.5c.1-.6.6-1 1.2-1z"
+                  fill="#009CDE"
+                />
+                <path
+                  d="M20.5 26h9.5c.6 0 1 .4 1 1 0 .1 0 .2-.1.3l-1.5 9c-.1.6-.6 1-1.2 1h-4c-.4 0-.7-.4-.6-.8l2-11.5c.1-.6.6-1 1.2-1z"
+                  fill="#012169"
                 />
               </svg>
             </div>
 
-            <h3 className={styles.btcTitle}>Donate with Bitcoin</h3>
+            <h3 className={styles.btcTitle}>Donate with PayPal</h3>
             <p className={styles.btcSubtitle}>
-              Send any amount of BTC to the address below. Your contribution goes directly
+              Send any amount to our PayPal email below. Your contribution goes directly
               toward rescuing and supporting girls in need.
             </p>
 
-            {/* QR-style decorative pattern */}
+            {/* PayPal decorative pattern */}
             <div className={styles.qrBox}>
               <div className={styles.qrInner}>
                 <svg viewBox="0 0 80 80" fill="none" className={styles.qrSvg}>
-                  {/* Corner squares */}
-                  <rect x="4" y="4" width="22" height="22" rx="3" fill="#F7931A" opacity="0.15"/>
-                  <rect x="7" y="7" width="16" height="16" rx="2" stroke="#F7931A" strokeWidth="2" fill="none"/>
-                  <rect x="11" y="11" width="8" height="8" rx="1" fill="#F7931A"/>
+                  {/* Corner squares with PayPal colors */}
+                  <rect x="4" y="4" width="22" height="22" rx="3" fill="#003087" opacity="0.15"/>
+                  <rect x="7" y="7" width="16" height="16" rx="2" stroke="#003087" strokeWidth="2" fill="none"/>
+                  <rect x="11" y="11" width="8" height="8" rx="1" fill="#009CDE"/>
 
-                  <rect x="54" y="4" width="22" height="22" rx="3" fill="#F7931A" opacity="0.15"/>
-                  <rect x="57" y="7" width="16" height="16" rx="2" stroke="#F7931A" strokeWidth="2" fill="none"/>
-                  <rect x="61" y="11" width="8" height="8" rx="1" fill="#F7931A"/>
+                  <rect x="54" y="4" width="22" height="22" rx="3" fill="#003087" opacity="0.15"/>
+                  <rect x="57" y="7" width="16" height="16" rx="2" stroke="#003087" strokeWidth="2" fill="none"/>
+                  <rect x="61" y="11" width="8" height="8" rx="1" fill="#009CDE"/>
 
-                  <rect x="4" y="54" width="22" height="22" rx="3" fill="#F7931A" opacity="0.15"/>
-                  <rect x="7" y="57" width="16" height="16" rx="2" stroke="#F7931A" strokeWidth="2" fill="none"/>
-                  <rect x="11" y="61" width="8" height="8" rx="1" fill="#F7931A"/>
+                  <rect x="4" y="54" width="22" height="22" rx="3" fill="#003087" opacity="0.15"/>
+                  <rect x="7" y="57" width="16" height="16" rx="2" stroke="#003087" strokeWidth="2" fill="none"/>
+                  <rect x="11" y="61" width="8" height="8" rx="1" fill="#009CDE"/>
 
                   {/* Center dots pattern */}
-                  <rect x="32" y="8" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
-                  <rect x="38" y="8" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="32" y="14" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="38" y="14" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
-                  <rect x="44" y="8" width="4" height="4" rx="1" fill="#F7931A" opacity="0.5"/>
+                  <rect x="32" y="8" width="4" height="4" rx="1" fill="#009CDE" opacity="0.6"/>
+                  <rect x="38" y="8" width="4" height="4" rx="1" fill="#003087" opacity="0.4"/>
+                  <rect x="32" y="14" width="4" height="4" rx="1" fill="#003087" opacity="0.4"/>
+                  <rect x="38" y="14" width="4" height="4" rx="1" fill="#009CDE" opacity="0.7"/>
+                  <rect x="44" y="8" width="4" height="4" rx="1" fill="#003087" opacity="0.5"/>
 
-                  <rect x="8" y="32" width="4" height="4" rx="1" fill="#F7931A" opacity="0.5"/>
-                  <rect x="14" y="32" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
-                  <rect x="8" y="38" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="14" y="38" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
-                  <rect x="8" y="44" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
+                  <rect x="8" y="32" width="4" height="4" rx="1" fill="#003087" opacity="0.5"/>
+                  <rect x="14" y="32" width="4" height="4" rx="1" fill="#009CDE" opacity="0.7"/>
+                  <rect x="8" y="38" width="4" height="4" rx="1" fill="#003087" opacity="0.4"/>
+                  <rect x="14" y="38" width="4" height="4" rx="1" fill="#009CDE" opacity="0.6"/>
+                  <rect x="8" y="44" width="4" height="4" rx="1" fill="#003087" opacity="0.7"/>
 
-                  <rect x="32" y="32" width="16" height="16" rx="3" fill="#F7931A" opacity="0.12"/>
-                  <rect x="36" y="36" width="8" height="8" rx="2" fill="#F7931A" opacity="0.5"/>
+                  <rect x="32" y="32" width="16" height="16" rx="3" fill="#003087" opacity="0.12"/>
+                  <rect x="36" y="36" width="8" height="8" rx="2" fill="#009CDE" opacity="0.5"/>
 
-                  <rect x="54" y="32" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
-                  <rect x="60" y="32" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="66" y="32" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
-                  <rect x="54" y="38" width="4" height="4" rx="1" fill="#F7931A" opacity="0.5"/>
-                  <rect x="60" y="38" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
+                  <rect x="54" y="32" width="4" height="4" rx="1" fill="#009CDE" opacity="0.6"/>
+                  <rect x="60" y="32" width="4" height="4" rx="1" fill="#003087" opacity="0.4"/>
+                  <rect x="66" y="32" width="4" height="4" rx="1" fill="#009CDE" opacity="0.7"/>
+                  <rect x="54" y="38" width="4" height="4" rx="1" fill="#003087" opacity="0.5"/>
+                  <rect x="60" y="38" width="4" height="4" rx="1" fill="#009CDE" opacity="0.6"/>
 
-                  <rect x="32" y="54" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
-                  <rect x="38" y="54" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="44" y="54" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
-                  <rect x="32" y="60" width="4" height="4" rx="1" fill="#F7931A" opacity="0.5"/>
-                  <rect x="38" y="60" width="4" height="4" rx="1" fill="#F7931A" opacity="0.7"/>
-                  <rect x="44" y="60" width="4" height="4" rx="1" fill="#F7931A" opacity="0.4"/>
-                  <rect x="32" y="66" width="4" height="4" rx="1" fill="#F7931A" opacity="0.6"/>
-                  <rect x="44" y="66" width="4" height="4" rx="1" fill="#F7931A" opacity="0.5"/>
+                  <rect x="32" y="54" width="4" height="4" rx="1" fill="#003087" opacity="0.7"/>
+                  <rect x="38" y="54" width="4" height="4" rx="1" fill="#009CDE" opacity="0.4"/>
+                  <rect x="44" y="54" width="4" height="4" rx="1" fill="#003087" opacity="0.6"/>
+                  <rect x="32" y="60" width="4" height="4" rx="1" fill="#009CDE" opacity="0.5"/>
+                  <rect x="38" y="60" width="4" height="4" rx="1" fill="#003087" opacity="0.7"/>
+                  <rect x="44" y="60" width="4" height="4" rx="1" fill="#009CDE" opacity="0.4"/>
+                  <rect x="32" y="66" width="4" height="4" rx="1" fill="#003087" opacity="0.6"/>
+                  <rect x="44" y="66" width="4" height="4" rx="1" fill="#009CDE" opacity="0.5"/>
                 </svg>
-                <div className={styles.qrLabel}>BTC</div>
+                <div className={styles.qrLabel}>PayPal</div>
               </div>
             </div>
 
-            {/* Address box */}
-            <div className={styles.addressLabel}>Bitcoin Wallet Address</div>
+            {/* Email box */}
+            <div className={styles.addressLabel}>PayPal Email Address</div>
             <div className={styles.addressBox}>
-              <span className={styles.addressText}>{BTC_ADDRESS}</span>
+              <span className={styles.addressText}>{PAYPAL_EMAIL}</span>
               <button
                 className={`${styles.copyBtn} ${copied ? styles.copied : ''}`}
                 onClick={handleCopy}
-                aria-label="Copy Bitcoin address"
+                aria-label="Copy PayPal email"
               >
                 {copied ? (
                   <>
@@ -135,7 +139,7 @@ const DonatePage = () => {
 
             {/* Notice */}
             <p className={styles.notice}>
-              ⚡ Transactions are processed on the Bitcoin network. Please double-check the
+              💳 Donations are processed securely through PayPal. Please verify the email 
               address before sending. All donations are non-refundable.
             </p>
           </div>
